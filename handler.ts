@@ -10,7 +10,7 @@ export async function connectToDataBase() {
 
   const connection: DatabaseConnection = new MongoConnection()
   databaseConnection = await connection.connect(
-    `mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_PASSWORD}@cluster0.f05vu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_PASSWORD}@${process.env.DB_URL}/myFirstDatabase?retryWrites=true&w=majority`,
     process.env.DB_NAME
   )
   return databaseConnection

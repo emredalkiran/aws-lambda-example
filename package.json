@@ -1,0 +1,28 @@
+{
+  "name": "event-register",
+  "version": "0.1.0",
+  "description": "A TypeScript starter for Serverless Framework",
+  "main": "handler.js",
+  "scripts": {
+    "test": "serverless-bundle test --detectOpenHandles"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnomalyInnovations/serverless-typescript-starter.git"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.64",
+    "@types/jest": "^26.0.14",
+    "@types/mongodb": "^3.6.12",
+    "serverless-bundle": "3.2.1",
+    "serverless-dotenv-plugin": "^3.0.0",
+    "serverless-offline": "^6.8.0"
+  },
+  "dependencies": {
+    "joi": "^17.4.0",
+    "mongodb": "^3.6.6",
+    "mongodb-client-encryption": "^1.2.3"
+  }
+}
